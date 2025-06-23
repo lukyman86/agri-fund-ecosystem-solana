@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { Link } from "react-router-dom";
 
 const Navigation = () => {
   const [isConnected, setIsConnected] = useState(false);
@@ -19,9 +20,11 @@ const Navigation = () => {
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-6">
             <div className="flex items-center space-x-4">
-              <div className="w-12 h-12 bg-gradient-to-br from-green-400 via-green-500 to-green-600 rounded-2xl flex items-center justify-center shadow-2xl shadow-green-500/40 hover:shadow-green-400/50 transition-all duration-300 hover:scale-105">
-                <span className="text-white font-bold text-xl">A</span>
-              </div>
+              <img 
+                src="/lovable-uploads/ae966878-e338-41d7-b4d1-bdc0ae4e09ea.png" 
+                alt="AGC Logo" 
+                className="w-16 h-16 object-contain"
+              />
               <div>
                 <h1 className="text-2xl font-bold gradient-text neon-green">Agriculture Ecosystem Fund</h1>
                 <p className="text-sm text-gray-400 font-medium">Powered by Solana Blockchain</p>
@@ -36,6 +39,18 @@ const Navigation = () => {
             <Badge variant="outline" className="text-emerald-300 border-emerald-500/30 bg-emerald-900/40 backdrop-blur-sm px-4 py-2 text-sm font-medium">
               Network: Solana
             </Badge>
+            
+            <Link to="/login">
+              <Button variant="outline" className="border-green-500/30 text-green-300 hover:bg-green-900/60 backdrop-blur-sm hover:border-green-400/50 transition-all duration-300">
+                Login
+              </Button>
+            </Link>
+            
+            <Link to="/register">
+              <Button className="bg-gradient-to-r from-green-600 to-green-700 hover:from-green-500 hover:to-green-600 text-white shadow-xl shadow-green-600/30 hover:shadow-green-500/40 px-6 py-2 transition-all duration-300 hover:scale-105">
+                Register
+              </Button>
+            </Link>
             
             {isConnected ? (
               <div className="flex items-center space-x-3">
