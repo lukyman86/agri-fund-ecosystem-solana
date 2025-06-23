@@ -96,20 +96,39 @@
   }
 }
 
-/* Natural agriculture-style gradients and effects */
-.natural-gradient {
-  background: linear-gradient(135deg, #22543d 0%, #2d5016 50%, #276749 100%);
+/* Professional dark theme with natural elements */
+.professional-gradient {
+  background: linear-gradient(135deg, #0a1a0a 0%, #1a2a1a 25%, #0f2a0f 50%, #1a3a1a 75%, #0a2a0a 100%);
 }
 
-.earth-card {
-  background: linear-gradient(145deg, #1a2e1a 0%, #2d3a2d 100%);
-  border: 1px solid #3d5a3d;
+.dark-card {
+  background: linear-gradient(145deg, #0f1f0f 0%, #1a2a1a 100%);
+  border: 1px solid rgba(34, 84, 61, 0.2);
+  backdrop-filter: blur(20px);
 }
 
-.nature-glow {
-  box-shadow: 0 0 20px rgba(34, 84, 61, 0.3);
+.professional-glow {
+  box-shadow: 0 0 30px rgba(34, 84, 61, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.05);
 }
 
-.organic-shadow {
-  box-shadow: 0 4px 20px rgba(45, 80, 22, 0.15);
+.premium-shadow {
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4), 0 4px 16px rgba(34, 84, 61, 0.1);
+}
+
+.glass-effect {
+  background: rgba(26, 42, 26, 0.8);
+  border: 1px solid rgba(34, 84, 61, 0.2);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.neon-green {
+  text-shadow: 0 0 10px rgba(34, 197, 94, 0.3);
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #22c55e, #16a34a, #059669);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
