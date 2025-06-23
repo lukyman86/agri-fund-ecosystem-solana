@@ -17,7 +17,7 @@ const Index = () => {
   const [activeTab, setActiveTab] = useState("overview");
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900">
+    <div className="min-h-screen bg-gradient-to-br from-green-900 via-emerald-900 to-teal-900">
       <Navigation />
       
       {activeTab === "overview" && (
@@ -25,31 +25,31 @@ const Index = () => {
           <HeroSection />
           
           {/* Key Statistics */}
-          <section className="py-16 bg-slate-800/50 backdrop-blur-sm">
+          <section className="py-16 bg-green-800/50 backdrop-blur-sm">
             <div className="container mx-auto px-4">
               <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-                <Card className="text-center border-blue-500/20 bg-slate-800/60 backdrop-blur-sm">
+                <Card className="text-center border-green-500/20 bg-green-800/60 backdrop-blur-sm">
                   <CardHeader>
-                    <CardTitle className="text-3xl font-bold text-blue-400">$2.5M+</CardTitle>
-                    <CardDescription className="text-slate-300">Total Value Locked</CardDescription>
+                    <CardTitle className="text-3xl font-bold text-green-400">$2.5M+</CardTitle>
+                    <CardDescription className="text-green-200">Total Value Locked</CardDescription>
                   </CardHeader>
                 </Card>
-                <Card className="text-center border-blue-500/20 bg-slate-800/60 backdrop-blur-sm">
+                <Card className="text-center border-green-500/20 bg-green-800/60 backdrop-blur-sm">
                   <CardHeader>
-                    <CardTitle className="text-3xl font-bold text-blue-400">15,000+</CardTitle>
-                    <CardDescription className="text-slate-300">Active Users</CardDescription>
+                    <CardTitle className="text-3xl font-bold text-green-400">15,000+</CardTitle>
+                    <CardDescription className="text-green-200">Active Users</CardDescription>
                   </CardHeader>
                 </Card>
-                <Card className="text-center border-blue-500/20 bg-slate-800/60 backdrop-blur-sm">
+                <Card className="text-center border-green-500/20 bg-green-800/60 backdrop-blur-sm">
                   <CardHeader>
-                    <CardTitle className="text-3xl font-bold text-blue-400">85</CardTitle>
-                    <CardDescription className="text-slate-300">Funded Projects</CardDescription>
+                    <CardTitle className="text-3xl font-bold text-green-400">85</CardTitle>
+                    <CardDescription className="text-green-200">Funded Projects</CardDescription>
                   </CardHeader>
                 </Card>
-                <Card className="text-center border-blue-500/20 bg-slate-800/60 backdrop-blur-sm">
+                <Card className="text-center border-green-500/20 bg-green-800/60 backdrop-blur-sm">
                   <CardHeader>
-                    <CardTitle className="text-3xl font-bold text-blue-400">12.5%</CardTitle>
-                    <CardDescription className="text-slate-300">Average APY</CardDescription>
+                    <CardTitle className="text-3xl font-bold text-green-400">12.5%</CardTitle>
+                    <CardDescription className="text-green-200">Average APY</CardDescription>
                   </CardHeader>
                 </Card>
               </div>
@@ -61,60 +61,60 @@ const Index = () => {
             <div className="container mx-auto px-4">
               <h2 className="text-4xl font-bold text-center mb-12 text-white">Our Services</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <Card className="hover:shadow-lg hover:shadow-blue-500/20 transition-all duration-300 border-blue-500/20 bg-slate-800/60 backdrop-blur-sm hover:border-blue-400/40">
+                <Card className="hover:shadow-lg hover:shadow-green-500/20 transition-all duration-300 border-green-500/20 bg-green-800/60 backdrop-blur-sm hover:border-green-400/40">
                   <CardHeader>
-                    <CardTitle className="text-blue-400">AGC Trading</CardTitle>
-                    <CardDescription className="text-slate-300">Trade AGC/USDT & AGC/SOL pairs with low fees</CardDescription>
+                    <CardTitle className="text-green-400">AGC Trading</CardTitle>
+                    <CardDescription className="text-green-200">Trade AGC/USDT & AGC/SOL pairs with low fees</CardDescription>
                   </CardHeader>
                   <CardContent>
                     <Button 
                       onClick={() => setActiveTab("trading")} 
-                      className="w-full bg-blue-600 hover:bg-blue-700 text-white"
+                      className="w-full bg-green-600 hover:bg-green-700 text-white"
                     >
                       Start Trading
                     </Button>
                   </CardContent>
                 </Card>
 
-                <Card className="hover:shadow-lg hover:shadow-blue-500/20 transition-all duration-300 border-blue-500/20 bg-slate-800/60 backdrop-blur-sm hover:border-blue-400/40">
+                <Card className="hover:shadow-lg hover:shadow-green-500/20 transition-all duration-300 border-green-500/20 bg-green-800/60 backdrop-blur-sm hover:border-green-400/40">
                   <CardHeader>
-                    <CardTitle className="text-blue-400">AGC Staking</CardTitle>
-                    <CardDescription className="text-slate-300">Stake your AGC tokens and earn up to 15% APY</CardDescription>
+                    <CardTitle className="text-green-400">AGC Staking</CardTitle>
+                    <CardDescription className="text-green-200">Stake your AGC tokens and earn up to 15% APY</CardDescription>
                   </CardHeader>
                   <CardContent>
                     <Button 
                       onClick={() => setActiveTab("staking")} 
-                      className="w-full bg-blue-600 hover:bg-blue-700 text-white"
+                      className="w-full bg-green-600 hover:bg-green-700 text-white"
                     >
                       Start Staking
                     </Button>
                   </CardContent>
                 </Card>
 
-                <Card className="hover:shadow-lg hover:shadow-blue-500/20 transition-all duration-300 border-blue-500/20 bg-slate-800/60 backdrop-blur-sm hover:border-blue-400/40">
+                <Card className="hover:shadow-lg hover:shadow-green-500/20 transition-all duration-300 border-green-500/20 bg-green-800/60 backdrop-blur-sm hover:border-green-400/40">
                   <CardHeader>
-                    <CardTitle className="text-blue-400">Project Funding</CardTitle>
-                    <CardDescription className="text-slate-300">Fund agricultural projects and earn returns</CardDescription>
+                    <CardTitle className="text-green-400">Project Funding</CardTitle>
+                    <CardDescription className="text-green-200">Fund agricultural projects and earn returns</CardDescription>
                   </CardHeader>
                   <CardContent>
                     <Button 
                       onClick={() => setActiveTab("funding")} 
-                      className="w-full bg-blue-600 hover:bg-blue-700 text-white"
+                      className="w-full bg-green-600 hover:bg-green-700 text-white"
                     >
                       Explore Projects
                     </Button>
                   </CardContent>
                 </Card>
 
-                <Card className="hover:shadow-lg hover:shadow-blue-500/20 transition-all duration-300 border-blue-500/20 bg-slate-800/60 backdrop-blur-sm hover:border-blue-400/40">
+                <Card className="hover:shadow-lg hover:shadow-green-500/20 transition-all duration-300 border-green-500/20 bg-green-800/60 backdrop-blur-sm hover:border-green-400/40">
                   <CardHeader>
-                    <CardTitle className="text-blue-400">Referral Program</CardTitle>
-                    <CardDescription className="text-slate-300">Earn bonuses by referring friends</CardDescription>
+                    <CardTitle className="text-green-400">Referral Program</CardTitle>
+                    <CardDescription className="text-green-200">Earn bonuses by referring friends</CardDescription>
                   </CardHeader>
                   <CardContent>
                     <Button 
                       onClick={() => setActiveTab("referral")} 
-                      className="w-full bg-blue-600 hover:bg-blue-700 text-white"
+                      className="w-full bg-green-600 hover:bg-green-700 text-white"
                     >
                       Join Program
                     </Button>
@@ -129,12 +129,12 @@ const Index = () => {
       {/* Main Application Tabs */}
       <div className="container mx-auto px-4 py-8">
         <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
-          <TabsList className="grid w-full grid-cols-5 mb-8 bg-slate-800/80 backdrop-blur-sm border border-blue-500/20">
-            <TabsTrigger value="overview" className="data-[state=active]:bg-blue-600 data-[state=active]:text-white text-slate-300">Overview</TabsTrigger>
-            <TabsTrigger value="trading" className="data-[state=active]:bg-blue-600 data-[state=active]:text-white text-slate-300">Trading</TabsTrigger>
-            <TabsTrigger value="staking" className="data-[state=active]:bg-blue-600 data-[state=active]:text-white text-slate-300">Staking</TabsTrigger>
-            <TabsTrigger value="funding" className="data-[state=active]:bg-blue-600 data-[state=active]:text-white text-slate-300">Funding</TabsTrigger>
-            <TabsTrigger value="referral" className="data-[state=active]:bg-blue-600 data-[state=active]:text-white text-slate-300">Referral</TabsTrigger>
+          <TabsList className="grid w-full grid-cols-5 mb-8 bg-green-800/80 backdrop-blur-sm border border-green-500/20">
+            <TabsTrigger value="overview" className="data-[state=active]:bg-green-600 data-[state=active]:text-white text-green-200">Overview</TabsTrigger>
+            <TabsTrigger value="trading" className="data-[state=active]:bg-green-600 data-[state=active]:text-white text-green-200">Trading</TabsTrigger>
+            <TabsTrigger value="staking" className="data-[state=active]:bg-green-600 data-[state=active]:text-white text-green-200">Staking</TabsTrigger>
+            <TabsTrigger value="funding" className="data-[state=active]:bg-green-600 data-[state=active]:text-white text-green-200">Funding</TabsTrigger>
+            <TabsTrigger value="referral" className="data-[state=active]:bg-green-600 data-[state=active]:text-white text-green-200">Referral</TabsTrigger>
           </TabsList>
 
           <TabsContent value="trading">
