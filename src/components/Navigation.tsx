@@ -26,7 +26,7 @@ const Navigation = () => {
                 className="w-16 h-16 object-contain"
               />
               <div>
-                <h1 className="text-2xl font-bold gradient-text neon-green">Agriculture Ecosystem Fund</h2>
+                <h2 className="text-2xl font-bold gradient-text neon-green">Agriculture Ecosystem Fund</h2>
                 <p className="text-sm text-gray-400 font-medium">Powered by Solana Blockchain</p>
               </div>
             </div>
