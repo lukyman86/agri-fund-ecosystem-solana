@@ -26,7 +26,7 @@ const Navigation = () => {
                 className="w-16 h-16 object-contain"
               />
               <div>
-                <h1 className="text-2xl font-bold gradient-text neon-green">Agriculture Ecosystem Fund</h1>
+                <h1 className="text-2xl font-bold gradient-text neon-green">Agriculture Ecosystem Fund</h2>
                 <p className="text-sm text-gray-400 font-medium">Powered by Solana Blockchain</p>
               </div>
             </div>
@@ -34,10 +34,7 @@ const Navigation = () => {
 
           <div className="flex items-center space-x-6">
             <Badge variant="outline" className="text-green-300 border-green-500/30 bg-green-900/40 backdrop-blur-sm px-4 py-2 text-sm font-medium">
-              AGC Price: $0.45
-            </Badge>
-            <Badge variant="outline" className="text-emerald-300 border-emerald-500/30 bg-emerald-900/40 backdrop-blur-sm px-4 py-2 text-sm font-medium">
-              Network: Solana
+              AGC Price: $0.3
             </Badge>
             
             <Link to="/login">
